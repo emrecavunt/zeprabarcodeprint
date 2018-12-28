@@ -14,11 +14,13 @@ SdkApi.desktop.usb
 newtonsoft.json.dll
 ```
 
-- Install Zebra .NET SDK via nuget 
+- Install Zebra .NET SDK via nuget. Behave your self and ensure you are using .Net Framework 4.7.2
 
 ```sh
 Install-Package Zebra.Printer.SDK -Version 2.15.2634
 ```
+
+
 
 ### Resources 
 | Source | README |
