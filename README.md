@@ -21,7 +21,7 @@ Install-Package Zebra.Printer.SDK -Version 2.15.2634
 ```
 
 ### Resources 
-| Plugin | README |
+| Source | README |
 | ------ | ------ |
 | ZPL MANUAL | [support.zebra.com/cpws/docs/zpl/zpl_manual.pdf][PlDb] |
 | ZPL ONLINE VIEWER | [labelary.com/viewer.html][PlGh] |
