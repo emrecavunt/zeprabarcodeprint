@@ -1,0 +1,197 @@
+﻿<Controls:MetroWindow
+    x:Class="ZebraPrinter.WPF.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ZebraPrinter.WPF"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    Title="FIGURENFACTS ZPL BARCODE PRINTER / ZEBRA OVER USB"
+    Width="800"
+    mc:Ignorable="d">
+    <Window.Background>
+        <LinearGradientBrush MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Color="#FFF0F0F0" />
+            <GradientStop Offset="1" Color="#FF9BC1EB" />
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid
+            Margin="16"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image
+                Width="100"
+                Height="100"
+                Source="Resources/favicon.png"
+                Stretch="Uniform" />
+            <StackPanel
+                Grid.Column="1"
+                Margin="24,0,0,0"
+                VerticalAlignment="Center">
+                <TextBlock
+                    Style="{StaticResource MaterialDesignDisplay1TextBlock}"
+                    TextOptions.TextHintingMode="Animated"
+                    TextWrapping="Wrap">
+                    WELCOME ABOARD CAPTAIN
+                </TextBlock>
+
+            </StackPanel>
+        </Grid>
+
+        <TextBox
+            x:Name="txt_barcode"
+            Grid.Row="1"
+            Width="205"
+            Height="37"
+            Margin="0,0,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            materialDesign:ColorZoneAssist.Mode="Light"
+            materialDesign:HintAssist.Hint="Please Enter Your Barcode Here.."
+            materialDesign:HintAssist.HintOpacity="1"
+            materialDesign:HintAssist.IsFloating="True"
+            Text="{Binding BarcodeText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+            TextWrapping="Wrap" />
+
+        <TextBox
+            x:Name="txtbx_one"
+            Grid.Row="2"
+            Width="205"
+            Height="37"
+            Margin="0,0,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            materialDesign:ColorZoneAssist.Mode="Light"
+            materialDesign:HintAssist.Hint="Please Enter Your Label Here.."
+            materialDesign:HintAssist.HintOpacity="1"
+            materialDesign:HintAssist.IsFloating="True"
+            Text="{Binding txt_one, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+            TextWrapping="Wrap" />
+
+        <TextBox
+            x:Name="txtbx_two"
+            Grid.Row="3"
+            Width="205"
+            Height="37"
+            Margin="0,0,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            materialDesign:ColorZoneAssist.Mode="Light"
+            materialDesign:HintAssist.Hint="Please Enter Your Label Here.."
+            materialDesign:HintAssist.HintOpacity="1"
+            materialDesign:HintAssist.IsFloating="True"
+            Text="{Binding txt_two, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+            TextWrapping="Wrap" />
+
+        <TextBox
+            x:Name="txtbx_three"
+            Grid.Row="4"
+            Width="205"
+            Height="37"
+            Margin="0,0,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            materialDesign:ColorZoneAssist.Mode="Light"
+            materialDesign:HintAssist.Hint="Please Enter Your Label Here.."
+            materialDesign:HintAssist.HintOpacity="1"
+            materialDesign:HintAssist.IsFloating="True"
+            Text="{Binding txt_three, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+            TextWrapping="Wrap" />
+
+        <TextBox
+            x:Name="txtbx_four"
+            Grid.Row="5"
+            Width="205"
+            Height="37"
+            Margin="0,0,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            materialDesign:ColorZoneAssist.Mode="Light"
+            materialDesign:HintAssist.Hint="Please Enter Your Label Here.."
+            materialDesign:HintAssist.HintOpacity="1"
+            materialDesign:HintAssist.IsFloating="True"
+            Text="{Binding txt_four, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+            TextWrapping="Wrap" />
+
+        <TextBox
+            x:Name="txtbx_five"
+            Grid.Row="6"
+            Width="205"
+            Height="37"
+            Margin="0,0,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            materialDesign:ColorZoneAssist.Mode="Light"
+            materialDesign:HintAssist.Hint="Please Enter Your Label Here.."
+            materialDesign:HintAssist.HintOpacity="1"
+            materialDesign:HintAssist.IsFloating="True"
+            Text="{Binding txt_five, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txtbx_six"
+            Grid.Row="7"
+            Width="205"
+            Height="37"
+            Margin="0,0,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            materialDesign:ColorZoneAssist.Mode="Light"
+            materialDesign:HintAssist.Hint="Please Enter Your Label Here.."
+            materialDesign:HintAssist.HintOpacity="1"
+            materialDesign:HintAssist.IsFloating="True"
+            Text="{Binding txt_six, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+            TextWrapping="Wrap" />
+        <Controls:NumericUpDown
+            x:Name="txt_copy"
+            Grid.Row="8"
+            Width="205"
+            Margin="0,15,0,0"
+            materialDesign:HintAssist.Hint="Copy"
+            Interval="1"
+            Minimum="0"
+            Value="{Binding Copy, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        <Button
+            x:Name="btn_print"
+            Grid.Row="9"
+            Width="214"
+            Height="31"
+            Margin="0,25,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            BorderBrush="White"
+            Click="btn_print_Click"
+            FontWeight="ExtraLight"
+            Foreground="#FFF6F6F6">
+            <StackPanel Orientation="Horizontal">
+
+                <materialDesign:PackIcon Kind="Printer" />
+                <TextBlock
+                    Margin="8,0,0,0"
+                    VerticalAlignment="Center"
+                    TextWrapping="Wrap">
+                    Print Barcode
+                </TextBlock>
+
+            </StackPanel>
+        </Button>
+    </Grid>
+</Controls:MetroWindow>
